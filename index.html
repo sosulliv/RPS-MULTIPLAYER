@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <!-- Script -->
+    <script src="assets/js/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 jumbotron">
+            <h1 class="display-6">Rock Paper Scissors</h1>
+            <p class="lead">Intialize Your User and then Click to Start Game</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input id="username" type="text" placeholder="Name">
+                <br/>
+                <button id="create_player" type="button" class="btn btn-primary">Intialize User</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="lead">Click Below to Start Game</p>
+                <button id="start" type="button" class="btn btn-primary">Click to Start</button>
+                <div id=choices>
+                    <button id="r" type="button" class="btn btn-primary choices">Rock</button>
+                    <button id="p" type="button" class="btn btn-primary choices">Paper</button>
+                    <button id="s" type="button" class="btn btn-primary choices">Scissors</button>
+                </div>
+                <p id="game_message"></p>
+                <p id="player_message"></p>
+                <p id="win_loss_messege"></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="lead">Trash Talk Below</p>
+                <!--<input id="username" type="text" placeholder="Name"><br/>-->
+                <input id="text" type="text" placeholder="Message">
+                <br/>
+                <button class="btn btn-primary" id="post">Post</button>
+                <br/>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
